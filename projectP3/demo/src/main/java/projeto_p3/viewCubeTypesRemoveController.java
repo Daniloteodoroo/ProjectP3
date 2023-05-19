@@ -12,17 +12,26 @@ public class viewCubeTypesRemoveController {
     private Button botaoNxnxn;
 
     @FXML
-    private Button botaoOtherpuzzels;
+    private Button botaoOtherpuzzles;
+
+    @FXML
+    private Button botaoVoltar;
+
+    @FXML
+    void switchToOptions(ActionEvent event) throws IOException {
+        App.setRoot("viewOptions");
+    }
 
     @FXML
     void switchToRemoveCubeNxnxn(ActionEvent event) throws IOException {
-        
+        App.setRoot("viewToRemoveNxnxn");
     }
 
     @FXML
     void switchToRemoveCubeOtherpuzzels(ActionEvent event) throws IOException {
-
+        App.setRoot("viewToRemoveOtherpuzzles");
     }
 
 }
+
 

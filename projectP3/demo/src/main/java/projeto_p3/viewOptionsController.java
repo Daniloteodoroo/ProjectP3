@@ -15,9 +15,6 @@ public class viewOptionsController {
     private Button alugar;
 
     @FXML
-    private Button atualizarPreco;
-
-    @FXML
     private Button removerQuantidade;
 
     @FXML
@@ -39,13 +36,7 @@ public class viewOptionsController {
     }
 
     @FXML
-    void switchToRide(ActionEvent event) {
-
+    void switchToRide(ActionEvent event) throws IOException {
+        App.setRoot("viewCubeTypesHire");
     }
-
-    @FXML
-    void switchToUpDatePrice(ActionEvent event) {
-
-    }
-
 }
