@@ -1,7 +1,7 @@
-module button {
+module projeto_p3 {
     requires javafx.controls;
     requires javafx.fxml;
 
-    opens ProjectP3 to javafx.fxml;
-    exports ProjectP3;
+    opens projeto_p3 to javafx.fxml;
+    exports projeto_p3;
 }
