@@ -40,14 +40,14 @@
 
 <VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto_p3.viewToCheckOtherpuzzlesController">
    <children>
-      <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="405.0" prefWidth="640.0">
+      <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="406.0" prefWidth="640.0">
          <children>
-            <Text layoutX="155.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VERIFICAR A QUANTIDADE DE CUBO (NXNXN)">
+            <Text layoutX="151.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Verificar o cubo (Otherpuzzles)" textAlignment="CENTER" wrappingWidth="337.41094970703125">
                <font>
-                  <Font size="16.0" />
+                  <Font size="20.0" />
                </font>
             </Text>
-            <Button fx:id="botaoVoltar" layoutX="244.0" layoutY="229.0" mnemonicParsing="false" onAction="#switchToOptions" text="Voltar ao Menu Principal" />
+            <Button fx:id="botaoVoltar" layoutX="248.0" layoutY="361.0" mnemonicParsing="false" onAction="#switchToOptions" text="Voltar ao Menu Principal" />
          </children>
       </AnchorPane>
    </children>
