@@ -52,7 +52,6 @@
           </font>
         </Label>
             <ButtonBar layoutX="183.0" layoutY="75.0" prefHeight="40.0" prefWidth="73.0" />
-            <ButtonBar layoutX="262.0" layoutY="242.0" prefHeight="40.0" prefWidth="65.0" />
             <Text layoutX="22.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Verificar a quantidade de cubos em estoque." textAlignment="CENTER" wrappingWidth="237.60003585815434" />
             <Button fx:id="removerQuantidade" layoutX="508.0" layoutY="116.0" mnemonicParsing="false" onAction="#switchToRemoveCubeTypes" prefHeight="26.0" prefWidth="92.0" text="REMOVER" textAlignment="CENTER">
                <font>
@@ -81,11 +80,15 @@
                   <Font name="Eras Demi ITC" size="12.0" />
                </font>
             </Button>
-            <ImageView fitHeight="162.0" fitWidth="164.0" layoutX="233.0" layoutY="223.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="40.0" fitWidth="74.0" layoutX="580.0" layoutY="346.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@cuboMagico01.png" />
                </image>
             </ImageView>
+            <Text layoutX="236.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Deseja cadastrar um novo(a):" />
+            <Button fx:id="cadastrarFuncionario" layoutX="265.0" layoutY="257.0" mnemonicParsing="false" onAction="#switchCadastrarFuncionario" prefHeight="26.0" prefWidth="100.0" text="Funcionário" />
+            <Button fx:id="cadastrarCriente" layoutX="262.0" layoutY="294.0" mnemonicParsing="false" onAction="#switchCadastrarCliente" prefHeight="26.0" prefWidth="106.0" text="Cliente" />
+            <Button fx:id="novoCubo" layoutX="262.0" layoutY="353.0" mnemonicParsing="false" onAction="#switchNovoCubo" prefHeight="26.0" prefWidth="106.0" text="NOVO CUBO" />
       </children>
     </AnchorPane>
   </children>

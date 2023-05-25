@@ -1,7 +1,5 @@
 package projeto_p3;
 
-import java.io.IOException;
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -15,28 +13,62 @@ public class viewOptionsController {
     private Button alugar;
 
     @FXML
+    private Button cadastrarCriente;
+
+    @FXML
+    private Button cadastrarFuncionario;
+
+    @FXML
+    private Button novoCubo;
+
+    @FXML
+    private Button cadastrarPessoa;
+
+    @FXML
     private Button removerQuantidade;
 
     @FXML
     private Button verificarQuantidade;
 
     @FXML
-    void switchToAddCubeTypes(ActionEvent event) throws IOException {
-        App.setRoot("viewCubeTypesAdd");
+    void switchCadastrarCliente(ActionEvent event) {
+
     }
 
     @FXML
-    void switchToCheckCubeTypes(ActionEvent event) throws IOException {
-        App.setRoot("viewCubeTypesCheck");
+    void switchCadastrarFuncionario(ActionEvent event) {
+
+    }
+
+    
+    @FXML
+    void switchNovoCubo(ActionEvent event) {
+
     }
 
     @FXML
-    void switchToRemoveCubeTypes(ActionEvent event) throws IOException {
-        App.setRoot("viewCubeTypesRemove");
+    void switchCadastrarPessoa(ActionEvent event) {
+
     }
 
     @FXML
-    void switchToRide(ActionEvent event) throws IOException {
-        App.setRoot("viewCubeTypesHire");
+    void switchToAddCubeTypes(ActionEvent event) {
+
     }
+
+    @FXML
+    void switchToCheckCubeTypes(ActionEvent event) {
+
+    }
+
+    @FXML
+    void switchToRemoveCubeTypes(ActionEvent event) {
+
+    }
+
+    @FXML
+    void switchToRide(ActionEvent event) {
+
+    }
+
 }
