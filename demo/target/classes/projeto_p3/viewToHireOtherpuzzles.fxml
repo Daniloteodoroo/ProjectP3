@@ -48,8 +48,10 @@
                   <Font size="20.0" />
                </font>
             </Text>
-            <Button fx:id="botaoVoltar" layoutX="248.0" layoutY="361.0" mnemonicParsing="false" onAction="#switchToOptions" text="Voltar ao Menu Principal" />
+            <Button fx:id="botaoVoltarMenu" layoutX="248.0" layoutY="361.0" mnemonicParsing="false" onAction="#switchToOptions" text="Voltar ao Menu Principal" />
             <TextField fx:id="informarQuantidade" layoutX="245.0" layoutY="187.0" promptText="Informe a quantidade:" />
+            <Button fx:id="botaoEnviar" layoutX="294.0" layoutY="224.0" mnemonicParsing="false" text="Enviar" />
+            <Button fx:id="botaoVoltar" layoutX="294.0" layoutY="264.0" mnemonicParsing="false" onAction="#switchCubeTypesHire" text="Voltar" />
          </children>
       </AnchorPane>
    </children>
