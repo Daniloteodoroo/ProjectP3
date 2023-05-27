@@ -27,7 +27,7 @@ public class viewToCheckNxnxnController {
     }
 
     @FXML
-    void switchPrev(ActionEvent event) throws IOException {
+    void switchCubeTypesCheck(ActionEvent event) throws IOException {
         App.setRoot("viewCubeTypesCheck");
     }
 }

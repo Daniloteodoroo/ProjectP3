@@ -48,7 +48,7 @@
                   <Font size="20.0" />
                </font>
             </Text>
-            <Button fx:id="botaoVoltar11" layoutX="248.0" layoutY="361.0" mnemonicParsing="false" onAction="#switchToOptions" text="Voltar ao Menu Principal" />
+            <Button fx:id="botaoVoltarMenu" layoutX="248.0" layoutY="361.0" mnemonicParsing="false" onAction="#switchToOptions" text="Voltar ao Menu Principal" />
             <Text layoutX="274.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;2&quot; --&gt; 2x2" wrappingWidth="94.93670654296875">
                <font>
                   <Font size="18.0" />
@@ -66,6 +66,7 @@
             </Text>
             <TextField fx:id="informarTipo" layoutX="245.0" layoutY="187.0" promptText="Informe o tipo:" />
             <TextField fx:id="informarQuantidade" layoutX="245.0" layoutY="221.0" promptText="Informe a quantidade:" />
+            <Button fx:id="botaoVoltar" layoutX="298.0" layoutY="293.0" mnemonicParsing="false" onAction="#switchCubeTypesRemove" text="Voltar" />
          </children>
       </AnchorPane>
    </children>

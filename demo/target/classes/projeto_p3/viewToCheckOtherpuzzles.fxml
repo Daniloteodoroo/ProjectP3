@@ -48,7 +48,7 @@
                </font>
             </Text>
             <Button fx:id="botaoVoltarMenu" layoutX="248.0" layoutY="361.0" mnemonicParsing="false" onAction="#switchToOptions" text="Voltar ao Menu Principal" />
-            <Button fx:id="botaoVoltar" layoutX="296.0" layoutY="325.0" mnemonicParsing="false" onAction="#switchPrev" text="Voltar" />
+            <Button fx:id="botaoVoltar" layoutX="296.0" layoutY="325.0" mnemonicParsing="false" onAction="#switchCubeTypesCheck" text="Voltar" />
          </children>
       </AnchorPane>
    </children>

@@ -21,7 +21,7 @@ public class viewToCheckOtherpuzzlesController {
 
     
     @FXML
-    void switchPrev(ActionEvent event) throws IOException {
+    void switchCubeTypesCheck(ActionEvent event) throws IOException {
         App.setRoot("viewCubeTypesCheck");
     }
 }
