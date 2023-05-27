@@ -32,6 +32,7 @@
   OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 -->
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
@@ -44,6 +45,7 @@
             <TextField fx:id="valorDoCubo" layoutX="233.0" layoutY="187.0" promptText="Valor do cubo..." />
             <Text layoutX="235.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informe:" />
             <TextField fx:id="nomeDoCubo" layoutX="233.0" layoutY="150.0" promptText="Nome do cubo..." />
+            <Button fx:id="botaoVoltar" layoutX="284.0" layoutY="337.0" mnemonicParsing="false" onAction="#switchOptions" text="Voltar" />
       </children>
     </AnchorPane>
   </children>
