@@ -67,6 +67,7 @@
             <TextField fx:id="informarTipo" layoutX="245.0" layoutY="187.0" promptText="Informe o tipo:" />
             <TextField fx:id="informarQuantidade" layoutX="245.0" layoutY="221.0" promptText="Informe a quantidade:" />
             <Button fx:id="botaoVoltar" layoutX="298.0" layoutY="293.0" mnemonicParsing="false" onAction="#switchCubeTypesRemove" text="Voltar" />
+            <Button fx:id="botaoEnviar" layoutX="298.0" layoutY="259.0" mnemonicParsing="false" text="Enviar" />
          </children>
       </AnchorPane>
    </children>

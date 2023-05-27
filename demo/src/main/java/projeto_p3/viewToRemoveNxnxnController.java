@@ -10,7 +10,13 @@ import javafx.scene.control.TextField;
 public class viewToRemoveNxnxnController {
 
     @FXML
+    private Button botaoEnviar;
+
+    @FXML
     private Button botaoVoltar;
+
+    @FXML
+    private Button botaoVoltarMenu;
 
     @FXML
     private TextField informarQuantidade;
@@ -19,7 +25,13 @@ public class viewToRemoveNxnxnController {
     private TextField informarTipo;
 
     @FXML
+    void switchCubeTypesRemove(ActionEvent event) throws IOException {
+        App.setRoot("viewCubeTypesRemove");
+    }
+
+    @FXML
     void switchToOptions(ActionEvent event) throws IOException {
         App.setRoot("viewOptions");
     }
+
 }

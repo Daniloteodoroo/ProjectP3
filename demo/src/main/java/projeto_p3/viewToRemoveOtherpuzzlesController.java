@@ -13,11 +13,19 @@ public class viewToRemoveOtherpuzzlesController {
     private Button botaoVoltar;
 
     @FXML
+    private Button botaoVoltarMenu;
+
+    @FXML
     private TextField informarQuantidade;
 
     @FXML
     void switchToOptions(ActionEvent event) throws IOException {
         App.setRoot("viewOptions");
+    }
+
+    @FXML
+    void switchCubeTypesRemove(ActionEvent event) throws IOException {
+        App.setRoot("viewCubeTypesRemove");
     }
 
 }
