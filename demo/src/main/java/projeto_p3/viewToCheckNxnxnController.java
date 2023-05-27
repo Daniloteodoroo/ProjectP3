@@ -10,7 +10,13 @@ import javafx.scene.control.TextField;
 public class viewToCheckNxnxnController {
 
     @FXML
+    private Button botaoEnviar;
+
+    @FXML
     private Button botaoVoltar;
+
+    @FXML
+    private Button botaoVoltarMenu;
 
     @FXML
     private TextField informarTipo;
@@ -18,6 +24,11 @@ public class viewToCheckNxnxnController {
     @FXML
     void switchToOptions(ActionEvent event) throws IOException {
         App.setRoot("viewOptions");
+    }
+
+    @FXML
+    void switchPrev(ActionEvent event) throws IOException {
+        App.setRoot("viewCubeTypesCheck");
     }
 }
 

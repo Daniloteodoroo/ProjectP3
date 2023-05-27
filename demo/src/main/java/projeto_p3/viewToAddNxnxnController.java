@@ -13,6 +13,9 @@ public class viewToAddNxnxnController {
     private Button botaoVoltar;
 
     @FXML
+    private Button botaoVoltarMenu;
+
+    @FXML
     private TextField informarQuantidade;
 
     @FXML
@@ -21,6 +24,11 @@ public class viewToAddNxnxnController {
     @FXML
     void switchToOptions(ActionEvent event) throws IOException {
         App.setRoot("viewOptions");
+    }
+
+    @FXML
+    void switchCubeTypesAdd(ActionEvent event) throws IOException {
+        App.setRoot("viewCubeTypesAdd");
     }
 
 }
