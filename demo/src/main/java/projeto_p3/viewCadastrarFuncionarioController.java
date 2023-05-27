@@ -1,9 +1,16 @@
 package projeto_p3;
 
+import java.io.IOException;
+
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
 public class viewCadastrarFuncionarioController {
+
+    @FXML
+    private Button botaoVoltar;
 
     @FXML
     private TextField informarCPF;
@@ -20,4 +27,8 @@ public class viewCadastrarFuncionarioController {
     @FXML
     private TextField informeSalario;
 
+    @FXML
+    void switchOptions(ActionEvent event) throws IOException {
+        App.setRoot("viewOptions");
+    }
 }

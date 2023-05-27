@@ -1,5 +1,7 @@
 package projeto_p3;
 
+import java.io.IOException;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -31,44 +33,38 @@ public class viewOptionsController {
     private Button verificarQuantidade;
 
     @FXML
-    void switchCadastrarCliente(ActionEvent event) {
-
+    void switchCadastrarCliente(ActionEvent event) throws IOException {
+        App.setRoot("cadastrarCliente");
     }
 
     @FXML
-    void switchCadastrarFuncionario(ActionEvent event) {
-
+    void switchCadastrarFuncionario(ActionEvent event) throws IOException {
+        App.setRoot("cadastrarFuncionario");
     }
-
     
     @FXML
-    void switchNovoCubo(ActionEvent event) {
-
+    void switchNovoCubo(ActionEvent event) throws IOException {
+        App.setRoot("adicionarNovoCubo");
     }
 
     @FXML
-    void switchCadastrarPessoa(ActionEvent event) {
-
+    void switchToAddCubeTypes(ActionEvent event) throws IOException {
+        App.setRoot("viewCubeTypesAdd");
     }
 
     @FXML
-    void switchToAddCubeTypes(ActionEvent event) {
-
+    void switchToCheckCubeTypes(ActionEvent event) throws IOException {
+        App.setRoot("viewCubeTypesCheck");
     }
 
     @FXML
-    void switchToCheckCubeTypes(ActionEvent event) {
-
+    void switchToRemoveCubeTypes(ActionEvent event) throws IOException {
+        App.setRoot("viewCubeTypesRemove");
     }
 
     @FXML
-    void switchToRemoveCubeTypes(ActionEvent event) {
-
-    }
-
-    @FXML
-    void switchToRide(ActionEvent event) {
-
+    void switchToHire(ActionEvent event) throws IOException {
+        App.setRoot("viewCubeTypesHire");
     }
 
 }
