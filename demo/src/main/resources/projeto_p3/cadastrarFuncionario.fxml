@@ -44,18 +44,19 @@
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
       <children>
         <Label alignment="CENTER" layoutX="257.0" layoutY="14.0" style="&#10;" text="Informe seu nome:" textAlignment="CENTER" wrapText="false" />
-            <TextField fx:id="informarNome" layoutX="232.0" layoutY="32.0" />
-            <Text layoutX="262.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informe seu CPF:" />
-            <TextField fx:id="informarCPF" layoutX="231.0" layoutY="87.0" />
-            <Text layoutX="248.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informe seu endereço:" />
-            <TextField fx:id="informarEnd" layoutX="231.0" layoutY="142.0" />
-            <Text layoutX="251.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informe seu telefone:" />
-            <TextField fx:id="informarTelefone" layoutX="232.0" layoutY="200.0" />
-            <Text layoutX="254.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informe seu salário:" />
-            <TextField fx:id="informeSalario" layoutX="232.0" layoutY="258.0" />
-            <Text layoutX="246.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informe sua ocupação:" />
-            <TextField fx:id="informeOcupacao" layoutX="232.0" layoutY="312.0" />
-            <Button fx:id="botaoVoltar" layoutX="280.0" layoutY="361.0" mnemonicParsing="false" onAction="#switchOptions" text="Voltar" />
+            <TextField fx:id="informarNome" layoutX="228.0" layoutY="32.0" />
+            <Text layoutX="263.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informe seu CPF:" />
+            <TextField fx:id="informarCPF" layoutX="229.0" layoutY="75.0" />
+            <Text layoutX="244.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informe seu endereço:" />
+            <TextField fx:id="informarEnd" layoutX="229.0" layoutY="124.0" />
+            <Text layoutX="248.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informe seu telefone:" />
+            <TextField fx:id="informarTelefone" layoutX="230.0" layoutY="174.0" />
+            <Text layoutX="253.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informe seu salário:" />
+            <TextField fx:id="informeSalario" layoutX="232.0" layoutY="226.0" />
+            <Text layoutX="245.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informe sua ocupação:" />
+            <TextField fx:id="informeOcupacao" layoutX="230.0" layoutY="279.0" />
+            <Button fx:id="botaoVoltar" layoutX="233.0" layoutY="360.0" mnemonicParsing="false" onAction="#switchOptions" text="Voltar ao Menu Principal" />
+            <Button fx:id="botaoEnviar" layoutX="283.0" layoutY="316.0" mnemonicParsing="false" text="Enviar" />
       </children>
     </AnchorPane>
   </children>

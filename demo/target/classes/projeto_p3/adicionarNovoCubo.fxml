@@ -45,7 +45,8 @@
             <TextField fx:id="valorDoCubo" layoutX="233.0" layoutY="187.0" promptText="Valor do cubo..." />
             <Text layoutX="235.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informe:" />
             <TextField fx:id="nomeDoCubo" layoutX="233.0" layoutY="150.0" promptText="Nome do cubo..." />
-            <Button fx:id="botaoVoltar" layoutX="284.0" layoutY="337.0" mnemonicParsing="false" onAction="#switchOptions" text="Voltar" />
+            <Button fx:id="botaoVoltar" layoutX="234.0" layoutY="336.0" mnemonicParsing="false" onAction="#switchOptions" text="Voltar ao Menu Principal" />
+            <Button fx:id="botaoEnviar" layoutX="282.0" layoutY="226.0" mnemonicParsing="false" text="Enviar" />
       </children>
     </AnchorPane>
   </children>

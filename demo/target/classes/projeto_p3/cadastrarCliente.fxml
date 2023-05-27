@@ -49,11 +49,12 @@
             <TextField fx:id="informarCPF" layoutX="232.0" layoutY="113.0" />
             <Text layoutX="248.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informe seu endereço:" />
             <TextField fx:id="informarEnd" layoutX="232.0" layoutY="174.0" />
-            <Text layoutX="251.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informe seu telefone:" />
-            <TextField fx:id="informarTelefone" layoutX="232.0" layoutY="245.0" />
-            <Text layoutX="245.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informe o valor devido:" />
-            <TextField fx:id="informarSalario" layoutX="232.0" layoutY="308.0" />
-            <Button fx:id="botaoVoltar" layoutX="283.0" layoutY="361.0" mnemonicParsing="false" onAction="#switchOptions" text="Voltar" />
+            <Text layoutX="251.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informe seu telefone:" />
+            <TextField fx:id="informarTelefone" layoutX="232.0" layoutY="231.0" />
+            <Text layoutX="245.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informe o valor devido:" />
+            <TextField fx:id="informarSalario" layoutX="232.0" layoutY="288.0" />
+            <Button fx:id="botaoVoltar" layoutX="233.0" layoutY="361.0" mnemonicParsing="false" onAction="#switchOptions" text="Voltar ao Menu Principal" />
+            <Button fx:id="botaoEnviar" layoutX="283.0" layoutY="324.0" mnemonicParsing="false" text="Enviar" />
          </children>
       </AnchorPane>
   </children>
