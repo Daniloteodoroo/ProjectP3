@@ -50,7 +50,7 @@
             </Text>
             <Button fx:id="botaoVoltarMenu" layoutX="248.0" layoutY="361.0" mnemonicParsing="false" onAction="#switchToOptions" text="Voltar ao Menu Principal" />
             <TextField fx:id="informarQuantidade" layoutX="247.0" layoutY="187.0" promptText="Informe a quantidade:" />
-            <Button fx:id="botaoEnviar" layoutX="296.0" layoutY="231.0" mnemonicParsing="false" text="Enviar" />
+            <Button fx:id="botaoEnviar" layoutX="283.0" layoutY="231.0" mnemonicParsing="false" onAction="#Remover" text="Remover" />
             <Button fx:id="botaoVoltar" layoutX="296.0" layoutY="276.0" mnemonicParsing="false" onAction="#switchCubeTypesRemove" text="Voltar" />
          </children>
       </AnchorPane>

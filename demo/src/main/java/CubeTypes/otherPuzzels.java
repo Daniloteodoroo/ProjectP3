@@ -6,7 +6,6 @@ public class otherPuzzels {
     private double price;
 
     public otherPuzzels() {
-        super();
         quantity = 0;
         price = 0;
     }

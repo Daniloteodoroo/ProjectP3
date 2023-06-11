@@ -6,7 +6,7 @@ public class Product extends CubeRental {
 
     public String type;
     public double price;
-    private nxnxn[] nxnxn; // [0] - 2x2 [1] - 3x3 [2] - 4x4
+    public nxnxn[] nxnxn; // [0] - 2x2 [1] - 3x3 [2] - 4x4
     private otherPuzzels otherPuzzels;
 
     public Product() {
@@ -16,6 +16,22 @@ public class Product extends CubeRental {
         for (int i = 0; i < nxnxn.length; i++) {
             nxnxn[i] = new nxnxn();
         }
+    }
+
+    public int get2x2(){
+        return nxnxn[0].getQuantity();
+    }
+
+    public int get3x3(){
+        return nxnxn[1].getQuantity();
+    }
+
+    public int get4x4(){
+        return nxnxn[2].getQuantity();
+    }
+
+    public int getOther(){
+        return otherPuzzels.getQuantity();
     }
 
     // VALOR TOTAL DE CADA TIPO DO CUBO (NXNXN)
@@ -68,43 +84,22 @@ public class Product extends CubeRental {
 
     // REMOVER A QUANTIDADE DE CADA TIPO DO CUBO (NXNXN)
 
-    public int removeProductsNxnxn2x2(int quantity) {
-        if (nxnxn[0].Remove(quantity) == -1) {
-            return -1;
-        } else {
-            nxnxn[0].Remove(quantity);
-            return nxnxn[0].getQuantity();
-        }
+    public void removeProductsNxnxn2x2(int quantity) {
+        nxnxn[0].Remove(quantity);
     }
 
-    public int removeProductsNxnxn3x3(int quantity) {
-        if (nxnxn[1].Remove(quantity) == -1) {
-            return -1;
-        } else {
-            nxnxn[1].Remove(quantity);
-            return nxnxn[1].getQuantity();
-        }
+    public void removeProductsNxnxn3x3(int quantity) {
+        nxnxn[1].Remove(quantity);
     }
 
-    public int removeProductsNxnxn4x4(int quantity) {
-        if (nxnxn[2].Remove(quantity) == -1) {
-            return -1;
-        } else {
-            nxnxn[2].Remove(quantity);
-            return nxnxn[2].getQuantity();
-        }
+    public void removeProductsNxnxn4x4(int quantity) {
+        nxnxn[2].Remove(quantity);
     }
 
     // REMOVER A QUANTIDADE DO CUBO (OTHERPUZZELS)
 
-    public int removeOtherPuzzels(int quantity) {
-
-        if (otherPuzzels.Remove(quantity) == -1) {
-            return -1;
-        } else {
-            otherPuzzels.Remove(quantity);
-            return otherPuzzels.getQuantity();
-        }
+    public void removeOtherPuzzels(int quantity) {
+        otherPuzzels.Remove(quantity);
     }
 
     // --------------------------------------------------------------------------------------//

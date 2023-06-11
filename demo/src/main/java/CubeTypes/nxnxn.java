@@ -6,7 +6,6 @@ public class nxnxn {
     private double price;
 
     public nxnxn() {
-        super();
         quantity = 0;
         price = 0;
     }
@@ -19,7 +18,8 @@ public class nxnxn {
         if (this.quantity - quantity < 0) {
             return -1;
         } else {
-            return this.quantity -= quantity;
+            this.quantity -= quantity;
+            return quantity;
         }
     }
 

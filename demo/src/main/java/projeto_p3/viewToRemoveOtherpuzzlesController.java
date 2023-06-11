@@ -13,6 +13,9 @@ public class viewToRemoveOtherpuzzlesController {
     private Button botaoVoltar;
 
     @FXML
+    private Button botaoEnviar;
+
+    @FXML
     private Button botaoVoltarMenu;
 
     @FXML
@@ -28,4 +31,18 @@ public class viewToRemoveOtherpuzzlesController {
         App.setRoot("viewCubeTypesRemove");
     }
 
+    @FXML
+    public void Remover(){
+        String txt = informarQuantidade.getText();
+
+        for(int i = 0; i < txt.length(); i++)
+        {
+            if(Character.isDigit(txt.charAt(i)) == false)
+            {
+                return;
+            }
+        }
+        
+        App.product.removeOtherPuzzels(Integer.parseInt(txt));
+    }
 }

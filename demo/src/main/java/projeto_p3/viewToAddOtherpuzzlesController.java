@@ -19,13 +19,30 @@ public class viewToAddOtherpuzzlesController {
     private TextField informarQuantidade;
 
     @FXML
-    void switchToOptions(ActionEvent event) throws IOException {
+    private Button botaoEnviar;
+
+    @FXML
+    public void switchToOptions(ActionEvent event) throws IOException {
         App.setRoot("viewOptions");
     }
 
     @FXML
-    void switchCubeTypesAdd(ActionEvent event) throws IOException {
+    public void switchCubeTypesAdd(ActionEvent event) throws IOException {
         App.setRoot("viewCubeTypesAdd");
     }
-}
 
+    @FXML
+    public void adicionar(){
+        String txt = informarQuantidade.getText();
+
+        for(int i = 0; i < txt.length(); i++)
+        {
+            if(Character.isDigit(txt.charAt(i)) == false)
+            {
+                return;
+            }
+        }
+
+        App.product.addProductsInOtherPuzzels(Integer.parseInt(txt));
+    }
+}

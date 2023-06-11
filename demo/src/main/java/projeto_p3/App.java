@@ -8,12 +8,16 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+import entities.Product;
+
 /**
  * JavaFX App
  */
 public class App extends Application {
 
     private static Scene scene;
+
+    public static Product product = new Product();
 
     @Override
     public void start(Stage stage) throws IOException {
@@ -24,6 +28,7 @@ public class App extends Application {
 
     static void setRoot(String fxml) throws IOException {
         scene.setRoot(loadFXML(fxml));
+        System.out.println(fxml);
     }
 
     private static Parent loadFXML(String fxml) throws IOException {

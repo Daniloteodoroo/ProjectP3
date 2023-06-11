@@ -5,30 +5,29 @@ import java.io.IOException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.TextField;
+import javafx.scene.text.Text;
 
 public class viewToCheckNxnxnController {
-
-    @FXML
-    private Button botaoEnviar;
-
-    @FXML
-    private Button botaoVoltar;
-
     @FXML
     private Button botaoVoltarMenu;
 
     @FXML
-    private TextField informarTipo;
+    private Text four;
+
+    @FXML
+    private Text three;
+
+    @FXML
+    private Text two;
+
+    public void initialize(){
+        two.setText(two.getText() + App.product.get2x2());
+        three.setText(three.getText() + App.product.get3x3());
+        four.setText(four.getText() + App.product.get4x4());
+    }
 
     @FXML
     void switchToOptions(ActionEvent event) throws IOException {
         App.setRoot("viewOptions");
     }
-
-    @FXML
-    void switchCubeTypesCheck(ActionEvent event) throws IOException {
-        App.setRoot("viewCubeTypesCheck");
-    }
 }
-
