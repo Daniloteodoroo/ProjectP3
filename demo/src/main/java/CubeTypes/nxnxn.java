@@ -10,12 +10,12 @@ public class nxnxn {
         price = 0;
     }
 
-    public void Add(int quantity) {
+    public void Add(int quantity) { //MÉTODO PARA ADICIONAR UM CUBO NXNXN
         this.quantity += quantity;
     }
 
-    public int Remove(int quantity) {
-        if (this.quantity - quantity < 0) {
+    public int Remove(int quantity) { //MÉTODO PARA REMOVER UM CUBO NXNXN
+        if (this.quantity - quantity < 0) { //CONDIÇÃO CASO A QUANTIDADE DE CUBO A SER REMOVIDO SEJA MENOR QUE A QUANTIDADE DE CUBOS NO ESTOQUE 
             return -1;
         } else {
             this.quantity -= quantity;
@@ -23,7 +23,7 @@ public class nxnxn {
         }
     }
 
-    public int getQuantity() {
+    public int getQuantity() {  //RETORNA A QUANTIDADE DE CUBOS NXNXN
         return quantity;
     }
 
@@ -31,7 +31,7 @@ public class nxnxn {
         return this.price = price;
     }
 
-    public double getPrice (){
+    public double getPrice (){ //RETORNA O PREÇO DO CUBO NXNXN
         return price;
     }
 }

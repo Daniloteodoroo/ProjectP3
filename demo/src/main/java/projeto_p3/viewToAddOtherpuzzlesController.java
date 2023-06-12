@@ -33,14 +33,14 @@ public class viewToAddOtherpuzzlesController {
 
     @FXML
     public void adicionar() {
-        String txt = informarQuantidade.getText();
+        String txt = informarQuantidade.getText(); //CAIXA DE TEXTO PARA SABER A QUANTIDADE
 
-        for (int i = 0; i < txt.length(); i++) {
+        for (int i = 0; i < txt.length(); i++) { //UM FOR PARA SABER SE Á UM CARACTERE QUE NÃO SEJA UM NÚMERO QUANDO INFORMAR A QUANTIDADE
             if (Character.isDigit(txt.charAt(i)) == false) {
                 return;
             }
         }
 
-        App.product.addProductsInOtherPuzzels(Integer.parseInt(txt));
+        App.product.addProductsInOtherPuzzels(Integer.parseInt(txt)); //ADICIONANDO UMA NOVA QUANTIDADE DE CUBO AO ESTOQUE
     }
 }

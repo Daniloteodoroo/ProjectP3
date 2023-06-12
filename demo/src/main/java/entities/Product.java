@@ -9,7 +9,7 @@ public class Product extends CubeRental {
     public nxnxn[] nxnxn; // [0] - 2x2 [1] - 3x3 [2] - 4x4
     private otherPuzzels otherPuzzels;
 
-    public Product() {
+    public Product() { //CONTRUTOR PARA CHAMAR A CLASSE (NXNXN) E (OTHERPUZZLES)
 
         otherPuzzels = new otherPuzzels();
         nxnxn = new nxnxn[3];
@@ -18,40 +18,40 @@ public class Product extends CubeRental {
         }
     }
 
-    public int get2x2(){
+    public int get2x2(){ //RETORNA A QUANTIDADE DE CUBOS DO TIPO 2X2
         return nxnxn[0].getQuantity();
     }
 
-    public int get3x3(){
+    public int get3x3(){ //RETORNA A QUANTIDADE DE CUBOS DO TIPO 3X3
         return nxnxn[1].getQuantity();
     }
 
-    public int get4x4(){
+    public int get4x4(){ //RETORNA A QUANTIDADE DE CUBOS DO TIPO 4XX4
         return nxnxn[2].getQuantity();
     }
 
-    public int getOther(){
+    public int getOther(){ //RETORNA A QUANTIDADE DE CUBOS DO TIPO OTHER
         return otherPuzzels.getQuantity();
     }
 
     // VALOR TOTAL DE CADA TIPO DO CUBO (NXNXN)
 
-    public double totalValueInNxnxn2x2() {
-        return nxnxn[0].getQuantity() * nxnxn[0].getPrice();
+    public double totalValueInNxnxn2x2() { 
+        return nxnxn[0].getQuantity() * nxnxn[0].getPrice(); //QUANTIDADE X O VALOR DO CUBO
     }
 
     public double totalValueInNxnxn3x3() {
-        return nxnxn[1].getQuantity() * nxnxn[1].getPrice();
+        return nxnxn[1].getQuantity() * nxnxn[1].getPrice(); //QUANTIDADE X O VALOR DO CUBO
     }
 
     public double totalValueInNxnxn4x4() {
-        return nxnxn[2].getQuantity() * nxnxn[2].getPrice();
+        return nxnxn[2].getQuantity() * nxnxn[2].getPrice(); //QUANTIDADE X O VALOR DO CUBO
     }
 
     // VALOR TOTAL DO CUBO (OTHERPUZZELS)
 
     public double totalValueInOtherPuzzels() {
-        return otherPuzzels.getQuantity() * otherPuzzels.getPrice();
+        return otherPuzzels.getQuantity() * otherPuzzels.getPrice(); //QUANTIDADE X O VALOR DO CUBO
     }
 
     // --------------------------------------------------------------------------------------//
@@ -59,7 +59,7 @@ public class Product extends CubeRental {
     // ADICIONAR A QUANTIDADE DE CADA TIPO DO CUBO (NXNXN)
 
     public int addProductsInNxnxn2x2(int quantity) {
-        nxnxn[0].Add(quantity);
+        nxnxn[0].Add(quantity); //MÉTODOD ADICIONAR DA CLASSE NXNXN COLOCANDO A QUANTIDADE QUE DESEJA COMO PARÂMETRO
         return nxnxn[0].getQuantity();
     }
 
@@ -85,7 +85,7 @@ public class Product extends CubeRental {
     // REMOVER A QUANTIDADE DE CADA TIPO DO CUBO (NXNXN)
 
     public void removeProductsNxnxn2x2(int quantity) {
-        nxnxn[0].Remove(quantity);
+        nxnxn[0].Remove(quantity); //MÉTODOD REMOVER DA CLASSE NXNXN COLOCANDO A QUANTIDADE QUE DESEJA COMO PARÂMETRO
     }
 
     public void removeProductsNxnxn3x3(int quantity) {
@@ -133,13 +133,13 @@ public class Product extends CubeRental {
     // METODOS toString (NXNXN) && (OTHERPUZZELS)
 
     public String nxnxnQuantity2x2() {
-        return type
+        return type //TIPO DE CUBO
                 + "(2x2), $"
-                + String.format("%.2f", nxnxn[0].getPrice())
+                + String.format("%.2f", nxnxn[0].getPrice()) //VALOR DO CUBO
                 + ", "
-                + nxnxn[0].getQuantity() + " units, Total: $"
-                + String.format("%.2f", totalValueInNxnxn2x2());
-    }
+                + nxnxn[0].getQuantity() + " units, Total: $" //QUANTIDADE DE CUBOS NO ESTOQUE 
+                + String.format("%.2f", totalValueInNxnxn2x2()); //VALOR TOTAL 
+    } 
 
     public String nxnxnQuantity3x3() {
         return type

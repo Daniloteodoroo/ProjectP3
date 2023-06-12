@@ -10,19 +10,19 @@ public class otherPuzzels {
         price = 0;
     }
 
-    public void Add(int quantity) {
+    public void Add(int quantity) {  //MÉTODO PARA ADICIONAR UM CUBO OTHER
         this.quantity += quantity;
     }
 
-    public int Remove(int quantity) {
-        if (this.quantity - quantity < 0) {
+    public int Remove(int quantity) { //MÉTODO PARA REMOVER UM CUBO OTHER
+        if (this.quantity - quantity < 0) { //CONDIÇÃO CASO A QUANTIDADE DE CUBO A SER REMOVIDO SEJA MENOR QUE A QUANTIDADE DE CUBOS NO ESTOQUE 
             return -1;
         } else {
             return this.quantity -= quantity;
         }
     }
 
-    public int getQuantity() {
+    public int getQuantity() {  //RETORNA A QUANTIDADE DE CUBOS OTHER
         return quantity;
     }
 
@@ -30,7 +30,7 @@ public class otherPuzzels {
         return this.price = price;
     }
 
-    public double getPrice (){
+    public double getPrice (){ //RETORNA O PREÇO DO CUBO OTHER
         return price;
     }
 

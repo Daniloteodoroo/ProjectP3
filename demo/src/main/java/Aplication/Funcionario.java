@@ -5,12 +5,12 @@ public class Funcionario extends Pessoa {
 
     
     public Funcionario(String nome, String cpf, String endereco, String telefone, double salario, String ocupacao) {
-        super(nome, cpf, endereco, telefone);
+        super(nome, cpf, endereco, telefone); //RECEBE OS ATRIBUTOS DA CLASSE PESSOA
         this.salario = salario;
         this.ocupacao = ocupacao;
     }
 
-    public double getSalario() {
+    public double getSalario() { //RETORNA O SALÁRIO ADICIONADO AO FUNCIONÁRIO
         return salario;
     }
 
@@ -18,7 +18,7 @@ public class Funcionario extends Pessoa {
         this.salario = salario;
     }
 
-    public String getOcupacao() {
+    public String getOcupacao() { //RETORNA A OCUPAÇÃO DO FUNCIONÁRIO (QUAL A SUA FUNÇÃO NA EMPRESA)
         return ocupacao;
     }
 

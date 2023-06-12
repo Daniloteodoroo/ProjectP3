@@ -36,17 +36,17 @@ public class viewToRemoveNxnxnController {
 
     @FXML
     public void remover() {
-        String tipo = informarTipo.getText();
-        String valor = informarQuantidade.getText();
+        String tipo = informarTipo.getText(); //CAIXA DE TEXTO PARA SABER O TIPO
+        String valor = informarQuantidade.getText(); //CAIXA DE TEXTO PARA SABER A QUANTIDADE
 
-        for (int i = 0; i < valor.length(); i++) {
+        for (int i = 0; i < valor.length(); i++) { //UM FOR PARA SABER SE Á UM CARACTERE QUE NÃO SEJA UM NÚMERO QUANDO INFORMAR A QUANTIDADE
             if (Character.isDigit(valor.charAt(i)) == false) {
                 return;
             }
         }
 
-        if (tipo.equals("2x2")) {
-            App.product.removeProductsNxnxn2x2(Integer.parseInt(valor));
+        if (tipo.equals("2x2")) { //CONDIÇÃO PARA SABER O TIPO DO CUBO
+            App.product.removeProductsNxnxn2x2(Integer.parseInt(valor));  //ADICIONANDO UMA NOVA QUANTIDADE DE CUBO AO ESTOQUE
         } else if (tipo.equals("3x3")) {
             App.product.removeProductsNxnxn3x3(Integer.parseInt(valor));
         } else if (tipo.equals("4x4")) {

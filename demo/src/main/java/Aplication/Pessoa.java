@@ -12,7 +12,7 @@ public class Pessoa {
         this.nome = nome;
     }
 
-    public String getCpf() {
+    public String getCpf() { //RETORNA O CPF DA PESSOA CADASTRADA
         return cpf;
     }
 
@@ -20,7 +20,7 @@ public class Pessoa {
         this.cpf = cpf;
     }
 
-    public String getEndereco() {
+    public String getEndereco() { //RETORNA O ENDEREÇO DA PESSOA CADASTRADA
         return endereco;
     }
 
@@ -28,7 +28,7 @@ public class Pessoa {
         this.endereco = endereco;
     }
 
-    public String getTelefone() {
+    public String getTelefone() { //RETORNA O TELEFONE DA PESSOA CADASTRADA
         return telefone;
     }
 
@@ -36,7 +36,7 @@ public class Pessoa {
         this.telefone = telefone;
     }
     
-    public String getNome() {
+    public String getNome() { //RETORNA O NOME DA PESSOA CADASTRADA
         return nome;
     }
     

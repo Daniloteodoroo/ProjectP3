@@ -19,7 +19,7 @@ public class viewToCheckOtherpuzzlesController {
     private Label txt;
 
     public void initialize() {
-        txt.setText(txt.getText() + " " + App.product.getOther());
+        txt.setText(txt.getText() + " " + App.product.getOther());  //MOSTRA O CUBO MAIS A QUANTIDADE
     }
 
     @FXML

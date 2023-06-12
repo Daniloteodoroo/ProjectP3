@@ -17,3 +17,5 @@ public abstract class CubeStock {
         System.out.print("Inform the desired option:");
     }
 }
+
+//CLASSE PARA PERGUNTAR AO USUÁRIO QUAL A OPÇÃO DESEJADA.

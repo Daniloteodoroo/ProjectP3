@@ -21,7 +21,7 @@ public class viewToCheckNxnxnController {
     private Text two;
 
     public void initialize() {
-        two.setText(two.getText() + App.product.get2x2());
+        two.setText(two.getText() + App.product.get2x2()); //MOSTRA NA TELA O TIPO DE CUBO MAIS A QUANTIDADE
         three.setText(three.getText() + App.product.get3x3());
         four.setText(four.getText() + App.product.get4x4());
     }
