@@ -10,6 +10,14 @@ public class Funcionario extends Pessoa {
         this.ocupacao = ocupacao;
     }
 
+    public String getNome() { //RETORNA O NOME DA PESSOA CADASTRADA
+        return nome;
+    }
+    
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
     public double getSalario() { //RETORNA O SALÁRIO ADICIONADO AO FUNCIONÁRIO
         return salario;
     }

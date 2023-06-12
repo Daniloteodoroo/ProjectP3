@@ -20,7 +20,7 @@ public class CubeRental extends CubeStock {
     }
 
     // ALUGAR O CUBO DO TIPO (NXNXN)
-
+    
     public void alugarNxnxn2x2 (){ //MÉTODO PARA ALUGAR UM CUBO NXNXN DO TIPO 2X2
         if (disponível){ //CONDIÇÃO PARA SABER SE TEM  CUBO DO TIPO 2X2 DISPONÍVEL NO ESTOQUE 
             disponível = false; //CASO A CONDIÇÃO FOR VERDADEIRA ELA RECEBE (FALSE) PARA DIZER QUE O CUBO ACABOU DE SER ALUGADO

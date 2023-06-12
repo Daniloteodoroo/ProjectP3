@@ -3,7 +3,7 @@ public class Pessoa {
     private String cpf;
     private String endereco;
     private String telefone;
-    private String nome;
+    protected String nome;
 
     public Pessoa(String cpf, String endereco, String telefone, String nome) {
         this.cpf = cpf;
