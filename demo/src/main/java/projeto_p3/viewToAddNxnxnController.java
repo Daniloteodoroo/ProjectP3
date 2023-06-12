@@ -39,24 +39,17 @@ public class viewToAddNxnxnController {
         String tipo = informarTipo.getText();
         String valor = informarQuantidade.getText();
 
-        for(int i = 0; i < valor.length(); i++)
-        {
-            if(Character.isDigit(valor.charAt(i)) == false)
-            {
+        for (int i = 0; i < valor.length(); i++) {
+            if (Character.isDigit(valor.charAt(i)) == false) {
                 return;
             }
         }
 
-        if(tipo.equals("2x2"))
-        {
+        if (tipo.equals("2x2")) {
             App.product.addProductsInNxnxn2x2(Integer.parseInt(valor));
-        }
-        else if(tipo.equals("3x3"))
-        {
+        } else if (tipo.equals("3x3")) {
             App.product.addProductsInNxnxn3x3(Integer.parseInt(valor));
-        }
-        else if(tipo.equals("4x4"))
-        {
+        } else if (tipo.equals("4x4")) {
             App.product.addProductsInNxnxn4x4(Integer.parseInt(valor));
         }
     }

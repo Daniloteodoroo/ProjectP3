@@ -32,17 +32,15 @@ public class viewToRemoveOtherpuzzlesController {
     }
 
     @FXML
-    public void Remover(){
+    public void Remover() {
         String txt = informarQuantidade.getText();
 
-        for(int i = 0; i < txt.length(); i++)
-        {
-            if(Character.isDigit(txt.charAt(i)) == false)
-            {
+        for (int i = 0; i < txt.length(); i++) {
+            if (Character.isDigit(txt.charAt(i)) == false) {
                 return;
             }
         }
-        
+
         App.product.removeOtherPuzzels(Integer.parseInt(txt));
     }
 }

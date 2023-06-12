@@ -20,7 +20,7 @@ public class viewToCheckNxnxnController {
     @FXML
     private Text two;
 
-    public void initialize(){
+    public void initialize() {
         two.setText(two.getText() + App.product.get2x2());
         three.setText(three.getText() + App.product.get3x3());
         four.setText(four.getText() + App.product.get4x4());

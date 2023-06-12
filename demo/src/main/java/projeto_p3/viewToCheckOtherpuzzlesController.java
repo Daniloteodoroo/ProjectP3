@@ -18,7 +18,7 @@ public class viewToCheckOtherpuzzlesController {
     @FXML
     private Label txt;
 
-    public void initialize(){
+    public void initialize() {
         txt.setText(txt.getText() + " " + App.product.getOther());
     }
 
@@ -27,10 +27,8 @@ public class viewToCheckOtherpuzzlesController {
         App.setRoot("viewOptions");
     }
 
-    
     @FXML
     void switchCubeTypesCheck(ActionEvent event) throws IOException {
         App.setRoot("viewCubeTypesCheck");
     }
 }
-

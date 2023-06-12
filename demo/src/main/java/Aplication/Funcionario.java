@@ -25,18 +25,4 @@ public class Funcionario extends Pessoa {
     public void setOcupacao(String ocupacao) {
         this.ocupacao = ocupacao;
     }
-
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-
-        if (obj == null || getClass() != obj.getClass()) {
-            return false;
-        }
-
-        Funcionario that = (Funcionario) obj;
-        return that.getCpf().equals(this.getCpf());
-    }
 }

@@ -14,7 +14,7 @@ public class viewToAddOtherpuzzlesController {
 
     @FXML
     private Button botaoVoltarMenu;
-  
+
     @FXML
     private TextField informarQuantidade;
 
@@ -32,13 +32,11 @@ public class viewToAddOtherpuzzlesController {
     }
 
     @FXML
-    public void adicionar(){
+    public void adicionar() {
         String txt = informarQuantidade.getText();
 
-        for(int i = 0; i < txt.length(); i++)
-        {
-            if(Character.isDigit(txt.charAt(i)) == false)
-            {
+        for (int i = 0; i < txt.length(); i++) {
+            if (Character.isDigit(txt.charAt(i)) == false) {
                 return;
             }
         }
